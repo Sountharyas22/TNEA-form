@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNEA 2024 Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="https://static.tneaonline.org/tn_logo.png" alt="logo" width="100"> 
+            <a class="navbar-brand" href="#">GOVERNMENT OF TAMIL NADU</a> 
+         </div>
+    </nav>
+    <!--Registration Form-->
+    <div class="container mt-5">    
+        <h2 class="text-center mb-4">TNEA Registration Form</h2>
+         <!-- Use Login Section -->
+         <div class="text-center mb-4">
+            <p><i class="bi bi-person custom-icon"></i> <span class="custom-text">User Login</span></p>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="studentName" class="form-label">Student Name</label>
+                <input type="text" class="form-control" id="studentName" name="studentName" required>
+            </div>
+            <div class="mb-3">
+                <label for="schoolName" class="form-label">School Name</label>
+                <input type="text" class="form-control" id="schoolName" name="schoolName" required>
+            </div>
+            <div class="mb-3">
+                <label for="hscRegNo" class="form-label">HSC Registration No</label>
+                <input type="text" class="form-control" id="hscRegNo" name="hscRegNo" required>
+            </div>
+            <div class="mb-3">
+                <label for="marks" class="form-label">Marks</label>
+                <input type="number" class="form-control" id="marks" name="marks" required>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="mb-3">
+                <label for="parentDetails" class="form-label">Parent Details</label>
+                <input type="text" class="form-control" id="parentDetails" name="parentDetails" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactDetails" class="form-label">Contact Details</label>
+                <input type="text" class="form-control" id="contactDetails" name="contactDetails" required>
+            </div>
+            <!-- Category II Inputs -->
+            <div class="form-group">
+                <label for="photo">Photograph:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <input type="file" id="signature" name="signature" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>
